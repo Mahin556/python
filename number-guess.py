@@ -5,14 +5,17 @@
 # do it in a loop until the user exits the game.
 import random
 
-random_number = random.randint(1, 100)
+low = int(input("Enter the Lower Bound: "))
+high = int(input("Enter the Upper Bound: "))
+
+random_number = random.randint(low, high)
 guess_count = 0
 
 while True:
     while True:
-        guessed_number = int(input("Guess a number between 1 and 100: "))
-        if guessed_number < 1 or guessed_number > 100:
-            print("Please guess a number between 1 and 100.")
+        guessed_number = int(input(f"Guess a number between {low} and {high}: "))
+        if guessed_number < low or guessed_number > high:
+            print(f"Please guess a number between {low} and {high}.")
             continue
         guess_count += 1
         if guessed_number < random_number:
