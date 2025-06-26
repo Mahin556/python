@@ -25,3 +25,16 @@ na me="mahin"
 @name="mahin"
 na@me="mahin"
 name@="mahin"
+
+
+# Multi Words Variable Names
+
+# Camel Case
+myVariableName = "John"
+
+# Pascal Case
+MyVariableName = "John"
+
+# Snake Case
+my_variable_name = "John"
+
