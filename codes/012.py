@@ -27,3 +27,19 @@ print(txt)
 # \f	Form Feed	
 # \ooo	Octal value	
 # \xhh	Hex value
+
+
+# \ooo	Octal Value	print("\141")	a
+# \xhh	Hex Value	print("\x61")	a
+# \r	Carriage Return	print("12345\rAB")	AB345
+
+#"\r" moves the cursor to the beginning of the current line — but does not go to the next line. So, anything you write after \r will overwrite from the beginning of the same line.
+
+print("12345\rAB")
+#Output:
+#AB345
+
+import time
+for i in range(5):
+    print(f"\rLoading {'.' * (i + 1)}", end="")
+    time.sleep(1)
