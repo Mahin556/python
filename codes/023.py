@@ -384,3 +384,28 @@ a = [("Alice", 21), ("Bob", 22), ("Charlie", 20), ("Bob", 24)]
 res = a.index(("Bob", 22))
 print(res)
 print(no_of_list(list_))
+
+
+a = [1, 4, 5, 6, 7]
+for i, v in enumerate(a):
+    print(i, v)
+
+a = [1, 4, 5, 6, 7]
+
+for i, v in enumerate(a):
+    print(i, v)
+
+a = [1, 4, 5, 6, 7]
+b = ['a', 'b', 'c', 'd', 'e']
+for i, v in zip(range(len(a)), zip(a,b)):
+    print(i, v)
+"""
+0 (1, 'a')
+1 (4, 'b')
+2 (5, 'c')
+3 (6, 'd')
+4 (7, 'e')
+"""
+
+a = [1, 4, 5, 6, 7]
+print([(i, a[i]) for i in range(len(a))])
