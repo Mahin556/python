@@ -365,4 +365,22 @@ def no_of_list(l):
     if type(i) == list:
       no_of_list+=1
   return no_of_list
+
+a = ["cat", "dog", "tiger"]
+print(a.index("dog"))
+
+a = [10, 20, 30, 40, 50, 40, 60, 40, 70]
+res = a.index(40, 4, 8)
+print(res)
+
+a = ['red', 'green', 'blue']
+try:
+    index = a.index('yellow')
+    print(a)
+except ValueError:
+    print("Not Present")
+
+a = [("Alice", 21), ("Bob", 22), ("Charlie", 20), ("Bob", 24)]
+res = a.index(("Bob", 22))
+print(res)
 print(no_of_list(list_))
