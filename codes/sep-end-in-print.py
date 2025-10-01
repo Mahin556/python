@@ -53,3 +53,23 @@ Explanation: 6 printed 6 times and 4 printed 4 times seperated by c = &.
 print(a*int(a),b*int(b),sep=c)
 
 ###############################################################################################################################################################
+
+#User function Template for python3
+########### Write your code below ###############
+
+# Take string input and print the string input
+
+# Take integer input and add 10 to the integer input and print
+
+# Take floating-point input and multiply the float input by 10 and print
+
+########### Write your code above ###############
+string=input()
+print(string)
+
+num=int(input())
+print(num+10)
+
+float_num=float(input())
+print(float_num*10)
+
