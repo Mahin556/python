@@ -73,3 +73,88 @@ print(num+10)
 float_num=float(input())
 print(float_num*10)
 
+---
+
+a=int(input())
+b=int(input())
+#code here
+p = a and b
+#Do a or b below
+q = a or b
+#Do not a below
+r = not a
+#The code below prints the output. Don't change it!
+print(p,q,r)
+
+---
+
+a=int(input())
+b=int(input())
+c=int(input())
+#code here
+#Do a^a below
+d=a^a
+#Do c^b below
+e=c^b
+#Do a&b below
+f=a&b
+#Do c|(a^a) below
+g=c|(a^a)
+#Do ~e below
+e=~e
+print(d, e, f, g)
+
+---
+a = int(input())
+b = int(input())
+
+########### Write your code below ###############
+
+# Write Code to Swap
+a, b = b, a
+
+########### Write your code above ###############
+
+print(a, b)
+
+---
+a = int(input())
+b = int(input())
+
+########### Write your code below ###############
+
+# Write Code to Swap
+c=a
+a=b
+b=c
+
+########### Write your code above ###############
+
+print(a, b)
+
+---
+#User function Template for python3
+a = int(input())
+n = int(input())
+r = 2
+"""
+Given three integers, a, r and n. Where a is the first term, r is the common ratio of a G.P. and r is equal to 2.  Calculate the nth term of GP.
+
+The nth term is given by an = a * r(n-1), where r = 2.
+
+Examples:
+
+Input: a = 2, n = 10
+Output: 1024
+Explanation: an = a * rn-1 = 2 * 210-1 = 1024
+"""
+
+########### Write your code below ###############
+# Compute the GP Term
+ans = a * (r**(n-1)) 
+########### Write your code above ###############
+
+print(ans)
+
+---
+
