@@ -1,7 +1,64 @@
+* variables are dynamically typed decided by the interpreter at the run time.
+```python
+a=1
+b=2
+c=a+b
+print(c)
+
+d=c+1
+print(d)
+
+e="Mahin"
+print(e)
+
+f=30.5
+print(f)
+```
+
+---
+
+* Variable naming rules
+```python
+# Valid
+name="mahin"
+_name="mahin"
+name1="mahin"
+n1a_me="mahin"
+na1me_="mahin"
+
+# Invalid
+1name="mahin"
+na me="mahin"
+@name="mahin"
+na@me="mahin"
+name@="mahin"
+```
+
+---
+
+* Variable naming schemas
+```python
+# Multi Words Variable Names
+
+# Camel Case
+myVariableName = "John"
+
+# Pascal Case
+MyVariableName = "John"
+
+# Snake Case
+my_variable_name = "John"
+```
+
+---
+
+* Mathamatical operations
+
+```python
 a=2+1
 b=3-1
-b+=2
-b-=1
+b+=2 #b=b+2
+b-=1 #b=b-1
 
 #   +	 Addition	      x + y	
 #   -	 Subtraction	  x - y	
@@ -98,6 +155,20 @@ print(x)
 print(y)
 print(z)
 
+# no of variables == length of list or string etc
+fruits = ["apple", "banana", "cherry","beans"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+#$ python test.py  
+# Traceback (most recent call last):
+#   File "C:\Users\ADMIN\Documents\git-repos\python\codes\test.py", line 3, in <module>
+#     x, y, z = fruits
+#     ^^^^^^^
+# ValueError: too many values to unpack (expected 3)
+
 x = "Python is awesome"
 print(x)
 
@@ -132,7 +203,7 @@ myfunc()
 # Local variable
 b = "awesome"
 def func():
-  b="demo"
+  b="demo" #accesiable or defined outside function
   print(b)
 
 print(b)
@@ -148,7 +219,6 @@ print("Python is " + x)
 
 # use the global keyword if you want to change a global variable inside a function.
 x = "awesome"
-
 def myfunc():
   global x
   x = "fantastic"
@@ -327,3 +397,59 @@ Decimal numbers and their binary values:
 #   not	                                            Logical NOT	
 #   and	                                            AND	
 #   or	                                            OR
+```
+```python
+# ───────────────────────────────────────────────
+# PYTHON DATA TYPES – FULL EXAMPLES + THEORY
+# ───────────────────────────────────────────────
+
+# String → sequence of characters (text)
+x = "Hello World"
+
+# Integer → whole number without decimals
+x = 20
+
+# Float → number with decimals
+x = 20.0
+
+# Boolean → True or False
+x = True
+
+# Complex → real + imaginary part (used in math)
+x = 1j
+
+# Dictionary → key-value pairs, mutable
+x = {"name": "John", "age": 36}
+
+# Range → sequence of numbers (lazy, doesn't store all values)
+x = range(0, 4)
+
+# List → ordered, mutable collection
+x = [1, "2", 3]
+
+# Tuple → ordered, immutable collection
+x = (1, "2", 3)
+
+# Set → unordered collection of unique items
+# IMPORTANT: set() accepts ONE iterable, not multiple arguments
+# Correct usage:
+x = {1, "2", 3}
+# OR
+x = set([1, "2", 3])
+
+# Frozenset → immutable version of a set
+x = frozenset({"apple", "banana", "cherry"})
+
+# Bytes → immutable sequence of bytes (0–255)
+x = b"Hello"
+
+# Bytearray → mutable sequence of bytes
+x = bytearray(5)  # creates 5 bytes initialized to 0
+
+# Memoryview → view of byte data without copying memory
+x = memoryview(bytes(5))
+
+# None → represents empty / null / no value
+x = None
+```
+
