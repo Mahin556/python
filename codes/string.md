@@ -1,3 +1,72 @@
+```python
+print("Hello")
+print('Hello')
+
+print("It's alright")
+print("He is called 'Johnny'")
+print('He is called "Johnny"')
+
+a = "Hello"
+print(a)
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+
+a = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(a)
+
+a = "Hello, World!"
+print(a[1])
+
+for x in "banana":
+  print(x)
+
+i=0
+while i<len(a):
+    print("demo:",a[i])
+    i+=1
+
+a = "Hello, World!"
+print(len(a))
+
+txt = "The best things in life are free!"
+print("free" in txt)
+
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+```
+```python
+#Slicing
+b = "Hello, World!"
+print(b[2:5]) #---> llo
+
+#Slice From the Start
+b = "Hello, World!"
+print(b[:5]) #---> Slice
+
+#Slice To the End
+b = "Hello, World!"
+print(b[2:]) #---> llo, World!
+
+#Negative Indexing
+b = "Hello, World!"
+print(b[-5:-2])  #---> orl
+```
+```python
 #Upper Case
 a = "Hello, World!"
 print(a.upper())
@@ -476,5 +545,83 @@ print (x)
 myvar = {"name" : "Jane", "age" : 36}
 txt = "Happy birthday {name} you are now on level {age}!"
 print(txt.format_map(myvar))
+```
+```python
+#String Format
+
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+
+txt = f"The price is {20 * 59} dollars"
+print(txt)
+
+# Display the price with 2 decimals:
+price = 59
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)
 
 
+# Escape Characters
+# \'	Single Quote	
+# \""	Double Quote	
+# \\	Backslash	
+# \n	New Line	
+# \r	Carriage Return	
+# \t	Tab	
+# \b	Backspace	
+# \f	Form Feed	
+# \ooo	Octal value	
+# \xhh	Hex value
+
+
+# \ooo	Octal Value	print("\141")	a
+# \xhh	Hex Value	print("\x61")	a
+# \r	Carriage Return	print("12345\rAB")	AB345
+
+#"\r" moves the cursor to the beginning of the current line — but does not go to the next line. So, anything you write after \r will overwrite from the beginning of the same line.
+
+print("12345\rAB")
+#Output:
+#AB345
+```
+```bash
+# String is Immutable
+name="Mahin raza"
+
+print(name[0:6])
+print(name[:6])
+
+print(name[6:10])
+print(name[6:])
+print(name[:])
+print(name[1:5])
+
+# name=name.replace("n","r",1)
+# print(name)
+
+# name=name.upper()
+print(name.upper())
+print(name)
+
+print(name.endswith("raza"))
+print(name.startswith("m"))
+print(name.capitalize())
+print(name.title())
+print(name[::2])
+```
+```python
+#Raw Strings
+print(r"line1\nline2")
+```
+```python
+#Emoji
+print("\U0001f600")
+```
+```python
+print(round(2**0.5,4))
+print(round(1.003140,4))
+```

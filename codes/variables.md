@@ -106,20 +106,6 @@ print(f"True and False = {True and False}")
 print(f"False and True = {False and True}")
 print(f"False and False = {False and False}")
 
-# type casting
-print(type(b))
-b=str(b)
-print(type(b))
-
-
-x = str(3)    # x will be '3'
-y = int(3)    # y will be 3
-z = float(3)  # z will be 3.0
-print(type(x))
-print(type(y))
-print(type(z))
-
-
 x = "John"
 # is the same as
 x = 'John'
@@ -453,3 +439,38 @@ x = memoryview(bytes(5))
 x = None
 ```
 
+---
+
+* Type casting
+
+```python
+# type casting
+print(type(b))
+b=str(b)
+print(type(b))
+
+
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+print(type(x))
+print(type(y))
+print(type(z))
+
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+
+# convert -ve to +ve int(absolute number)
+abs=abs(-7)
+print(abs)
+```
